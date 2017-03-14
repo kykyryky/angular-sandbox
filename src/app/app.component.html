@@ -1,3 +1,11 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-container class="example-container">
+  <md-sidenav #sidenav class="example-sidenav">
+    <app-menu-list></app-menu-list>
+  </md-sidenav>
+
+  <div class="example-sidenav-content">
+    <button md-button (click)="sidenav.open()">
+      Open sidenav
+    </button>
+  </div>
+</md-sidenav-container>
